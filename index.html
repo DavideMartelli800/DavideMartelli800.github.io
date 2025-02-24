@@ -3,75 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITS Academy</title>
+    <title>Scuola Tecnica - Progetto Packet Tracer</title>
     <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; }
-        header { background: #0044cc; color: #fff; padding: 20px 0; text-align: center; }
-        nav ul { padding: 0; list-style: none; background: #333; overflow: hidden; color: #fff; text-align: center; margin: 0; }
-        nav ul li { display: inline; }
-        nav ul li a { text-decoration: none; color: white; padding: 15px 20px; display: inline-block; }
-        nav ul li a:hover { background: #575757; }
-        .container { padding: 20px; }
-        .card { background: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); padding: 15px; margin: 15px 0; }
-        .btn-download {
-            display: inline-block;
-            background: #28a745;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-            margin-top: 10px;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
         }
-        .btn-download:hover { background: #218838; }
-        footer { text-align: center; padding: 10px 0; background: #333; color: #fff; }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: auto;
+            padding: 0 20px;
+        }
+        .main-content {
+            background: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 15px;
+            color: #fff;
+            background: #007bff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>ITS Academy</h1>
-        <p>L'educazione per il futuro</p>
+        <h1>Scuola Tecnica Informatici</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chi Siamo</a></li>
+                <li><a href="#">Progetti</a></li>
+                <li><a href="#">Contatti</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Chi Siamo</a></li>
-            <li><a href="#courses">Corsi</a></li>
-            <li><a href="#contact">Contatti</a></li>
-        </ul>
-    </nav>
+
     <div class="container">
-        <section id="home">
-            <h2>Benvenuti all'ITS Academy</h2>
-            <p>Offriamo un'istruzione di alta qualità per preparare gli studenti al futuro.</p>
-        </section>
-        <section id="about">
-            <h2>Chi Siamo</h2>
-            <p>ITS Academy è dedicata all'eccellenza accademica e allo sviluppo personale degli studenti nel mondo dell'informatica.</p>
-               <h2>Scarica il Progetto Packet Tracer</h2>
-
-    <a href="Esame Networking.pkt" download class="btn-download">📥 Scarica il progetto Packet Tracer </a>
-
-        </section>
-        <section id="courses">
-            <h2>Corsi</h2>
-            <div class="card">
-                <h3>Corso di Cyber Security</h3>
-                <p>Impara le basi della sicurezza informatica e della programmazione.</p>
-            </div>
-            <div class="card">
-                <h3>Corso di ICT</h3>
-                <p>Impara le basi della tecnologia e della comunicazione informatica.</p>
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contattaci</h2>
-            <p>Email: its@academy.it</p>
-            <p>Telefono: +39 123 456 7890</p>
+        <section class="main-content">
+            <h2>Progetto Packet Tracer</h2>
+            <p>In questo progetto, gli studenti hanno realizzato una rete simulata utilizzando Cisco Packet Tracer. L'obiettivo è stato quello di configurare una rete aziendale completa di router, switch e computer, garantendo la comunicazione sicura ed efficiente tra i dispositivi.</p>
+            <p>Puoi scaricare il progetto per studiarlo e modificarlo a tuo piacimento:</p>
+            <a class="download-btn" href="Esame Finale.pkt" download>Scarica il Progetto</a>
         </section>
     </div>
+
     <footer>
-        <p>&copy; 2025 ITS Academy. Tutti i diritti riservati.</p>
+        <p>&copy; 2025 Scuola Tecnica Informatici. Tutti i diritti riservati.</p>
     </footer>
+
 </body>
 </html>
